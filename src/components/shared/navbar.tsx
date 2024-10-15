@@ -48,7 +48,9 @@ export const Navbar: FC = () => {
       <div className='drawer-content flex flex-col'>
         {/* Navbar */}
         <div className='navbar w-full'>
-          <div className='mx-2 flex-1 px-2'>Matrix</div>
+          <div className='mx-2 flex-1 px-2 text-xl lg:text-[1.8vw] font-medium  uppercase'>
+            Matrix
+          </div>
           <div className='flex-none lg:hidden'>
             <label
               htmlFor='navbar-driver'

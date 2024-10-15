@@ -11,5 +11,6 @@
 }
 
 body {
+  background-image: url('./assets/matrix-code.gif');
   padding: 0 16px;
 }
