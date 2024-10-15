@@ -3,30 +3,28 @@ import { Card } from '../ui';
 
 interface Card {
   title: string;
-  imageUrl: string;
-  alt: string;
+  description: string;
 }
 
 const cards: Card[] = [
   {
     title: 'Как должен выглядеть ваш сайт',
-    imageUrl: '/src/assets/answer-1.svg',
-    alt: 'Как?',
+    description: 'Ваш сайт должен быть привлекательным и отражать ваш бренд.',
   },
   {
     title: 'Как выгодно показать клиентам свои услуги',
-    imageUrl: '/src/assets/answer-2.svg',
-    alt: 'Услуги',
+    description:
+      'Показывайте свои услуги в выгодном свете, чтобы привлечь клиентов.',
   },
   {
     title: 'На какие страницы и как вести рекламу',
-    imageUrl: '/src/assets/answer-3.svg',
-    alt: 'Реклама',
+    description:
+      'Выберите правильные страницы для рекламы, чтобы достичь максимального эффекта.',
   },
   {
     title: 'Как сделать сайт актуальным на ближайшие пару лет',
-    imageUrl: '/src/assets/answer-4.svg',
-    alt: 'Актуальность',
+    description:
+      'Сделайте свой сайт актуальным, чтобы он оставался конкурентоспособным в ближайшие годы.',
   },
 ];
 
@@ -50,7 +48,7 @@ export const ApproachHero: FC = () => {
 
   return (
     <section className='mb-12'>
-      <div className='hero bg-[url(./src/assets/questions.svg)] mb-24 h-[42vw] bg-auto bg-no-repeat'>
+      <div className='hero bg-[url(../src/assets/questions.svg)] bg-transparent mb-24 h-[42vw]'>
         <div className='hero-overlay bg-transparent'></div>
         <div className='hero-content'>
           <div className='text-center'>
